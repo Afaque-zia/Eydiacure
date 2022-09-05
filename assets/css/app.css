@@ -7640,7 +7640,7 @@ textarea {
 
 .features_area_home6 {
   padding: 80px 0 0px;
-  margin-bottom: -40px;
+  margin-bottom: 100px;
 }
 
 .features_area_home6 .section_title_four {
@@ -16786,7 +16786,7 @@ p.form-submit {
 .ingredeint4_section .product_ratting a i,
 .ingredeint4_section .ingredient_slider_one .slick-next:hover::before,
 .ingredeint4_section .ingredient_slider_one .slick-prev:hover::before {
-  color: #2a5591;
+  color: #f99a00;
 }
 
 .ingredeint4_section .ingredient_slider_detail .product_quantity li.border {
@@ -16834,7 +16834,7 @@ p.form-submit {
 }
 
 .ingredeint4_section .product_ratting a i {
-  color: #2a5591;
+  color: #f99a00;
 }
 
 .ingredeint4_section .product_ratting.woocommerce-product-rating {
@@ -16896,10 +16896,10 @@ p.form-submit {
 }
 
 .product_desc.woocommerce-product-details__short-description p {
-  font-size: 14px;
+  font-size: 24px;
   color: #545454;
   letter-spacing: 0.25px;
-  line-height: 24px;
+  line-height: 36px;
 }
 
 .product_share {
