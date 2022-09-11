@@ -3752,7 +3752,7 @@ textarea {
   ##  Banner5
   --------------------------------------------------------------*/
 .banner_static {
-  background: #f5f5f5;
+  background: #4f97c3;
 }
 
 .banner_static_flex {
@@ -3786,7 +3786,7 @@ textarea {
 .banner_static_left h1 {
   font-size: 94px;
   font-weight: 800;
-  color: #333;
+  color: #fff;
   margin: 0;
   line-height: 100px;
   margin-bottom: 38px;
@@ -6733,7 +6733,7 @@ textarea {
   display: inline-block;
   margin-right: 30px;
   vertical-align: middle;
-  background: #f5f5f5;
+  background: #4f97c2;
   padding: 20px;
   position: relative;
 }
@@ -6785,7 +6785,7 @@ textarea {
   padding: 18px;
   height: 220px;
   z-index: 2;
-  background: #f9f9f9;
+  background: #4f97c2;
 }
 
 .home_five_single_service_img {
@@ -6858,10 +6858,10 @@ textarea {
   ## Home Service 5
   --------------------------------------------------------------*/
 .home5_recent {
-  background: transparent;
+  background: #4f97c2;
   position: relative;
   overflow: hidden;
-  padding-bottom: 138px;
+  padding-bottom: 38px;
 }
 
 .home5_recent:after {
@@ -7039,13 +7039,19 @@ textarea {
 .home5_recent_slide .home5_recent_thumb span {
   position: absolute;
   bottom: 0;
-  left: 57px;
+  left: 43%;
   width: 50px;
   height: 50px;
   border-radius: 50%;
   line-height: 50px;
   color: #fff;
   text-align: center;
+}
+@media (max-width:666px){
+
+.home5_recent_slide .home5_recent_thumb span {
+  left: 19%;
+}
 }
 
 .home5_recent_slide .home5_recent_title h3 {
