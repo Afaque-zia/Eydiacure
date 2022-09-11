@@ -17,8 +17,8 @@
 	<link rel="stylesheet" href="dependencies/bootstrap/css/bootstrap.min.css" type="text/css">
 	<link rel="stylesheet" href="dependencies/fontawesome/css/fontawesome-all.min.css" type="text/css">
 	<link rel="stylesheet" href="dependencies/flaticon/css/flaticon.css" type="text/css">
-	<link rel="stylesheet" href="dependencies/owl.carousel/css/owl.carousel.min.css" type="text/css">
-	<link rel="stylesheet" href="dependencies/owl.carousel/css/owl.theme.default.min.css" type="text/css">
+	<link rel="stylesheet" href="assets/owl.carousel.min.css" type="text/css">
+	<link rel="stylesheet" href="assets/owl.theme.default.min.css" type="text/css">
 	<link rel="stylesheet" href="dependencies/magnific-popup/magnific-popup.css" type="text/css">
 	<link rel="stylesheet" href="dependencies/animate.css/css/animate.css" type="text/css">
 	<link rel="stylesheet" href="dependencies/slick-carousel/css/slick.css" type="text/css">
@@ -34,62 +34,137 @@
 	<link id="theme" rel="stylesheet" href="assets/css/theme-color/theme-default.css" type="text/css">
 
 	<!-- Google Web Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900%7CRoboto:300,400,500,700,900" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900%7CRoboto:300,400,500,700,900"
+		rel="stylesheet">
 	<style>
+		#header{
+			top: 0;
+		}
+		.owl-carousel {
+			width: 100%;
+			height: 582px;
+			overflow: hidden;
+			display: block;
+		}
 
-/* Infinite Scroll icon section start */
-body {
-	align-items: center;
-  }
-  @keyframes scroll {
-	0% {
-	  transform: translateX(0);
-	}
-	100% {
-	  transform: translateX(calc(-250px * 7));
-	}
-  }
-  .icon-slider {
-	/* background: white; */
-	/* box-shadow: 0 10px 20px -5px rgba(255, 255, 255); */
-	height: 100px;
-	margin: auto;
-	overflow: hidden;
-	position: relative;
-	width: 100%;
-  }
-  .icon-slider::before, .icon-slider::after {
-	/* background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%); */
-	content: "";
-	height: 100px;
-	position: absolute;
-	width: 200px;
-	z-index: 2;
-  }
-  .icon-slider::after {
-	right: 0;
-	top: 0;
-	transform: rotateZ(180deg);
-  }
-  .icon-slider::before {
-	left: 0;
-	top: 0;
-  }
-  .icon-slider .icon-slide-track {
-	animation: scroll 20s linear infinite;
-	display: flex;
-	width: calc(250px * 14);
-  }
-  .icon-slider .icon-slide {
-	height: 100px;
-    width: 250px;
-    margin: 0 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-/* Infinite Scroll icon section end */
+		.item {
+			width: 100%;
+			height: 500px;
+			border-radius: 20px;
+			margin-top: 55px;
+
+		}
+
+		#item-1 {
+			background-image: url(./assets/img/eydiacure-slide1.jpg);
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			height: 500px;
+		}
+
+		#item-2 {
+			background-image: url(./assets/img/eydiacure-slide2.jpg);
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			height: 500px;
+		}
+
+		#item-3 {
+			background-image: url(./assets/img/eydiacure-slide3.jpg);
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			height: 500px;
+		}
+
+		.banner-content {
+			margin-top: 0px;
+			padding: 88px 50px;
+			max-width: 630px;
+			/* margin-left: auto; */
+			position: relative;
+			z-index: 1;
+		}
+
+		.banner-content h2 {
+			color: #fff;
+			font-size: 55px;
+			margin-bottom: 20px;
+		}
+		@media (max-width:666px){
+			.banner-content h2 {
+				color: #fff;
+				font-size: 25px;
+				text-align: center !important;
+				margin-top: 100px;
+				margin-bottom: 20px;
+			}
+		}
+		/* Infinite Scroll icon section start */
+		body {
+			align-items: center;
+		}
+
+		@keyframes scroll {
+			0% {
+				transform: translateX(0);
+			}
+
+			100% {
+				transform: translateX(calc(-250px * 7));
+			}
+		}
+
+		.icon-slider {
+			/* background: white; */
+			/* box-shadow: 0 10px 20px -5px rgba(255, 255, 255); */
+			height: 100px;
+			margin: auto;
+			overflow: hidden;
+			position: relative;
+			width: 100%;
+		}
+
+		.icon-slider::before,
+		.icon-slider::after {
+			/* background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%); */
+			content: "";
+			height: 100px;
+			position: absolute;
+			width: 200px;
+			z-index: 2;
+		}
+
+		.icon-slider::after {
+			right: 0;
+			top: 0;
+			transform: rotateZ(180deg);
+		}
+
+		.icon-slider::before {
+			left: 0;
+			top: 0;
+		}
+
+		.icon-slider .icon-slide-track {
+			animation: scroll 20s linear infinite;
+			display: flex;
+			width: calc(250px * 14);
+		}
+
+		.icon-slider .icon-slide {
+			height: 100px;
+			width: 250px;
+			margin: 0 20px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		/* Infinite Scroll icon section end */
 	</style>
 
 </head>
@@ -111,9 +186,9 @@ body {
 						<div class="col-auto mr-auto">
 							<div class="header_logo">
 								<a href="index.html">
-							<img class="logo-default" src="media/images/home6/logo.png" alt="">
-							<img class="logo-white" src="media/images/home6/footer-logo.png" alt="">
-						</a>
+									<img class="logo-default" src="media/images/home6/logo.png" alt="">
+									<img class="logo-white" src="media/images/home6/footer-logo.png" alt="">
+								</a>
 							</div>
 						</div>
 						<div class="col-auto no-position">
@@ -153,8 +228,8 @@ body {
 					<div class="bottom_nav bottom_nav_two">
 						<div id="mobile-logo">
 							<a href="index.html">
-						<img src="assets/img/hm-two-logo.png" class="svg" alt="">
-					</a>
+								<img src="assets/img/hm-two-logo.png" class="svg" alt="">
+							</a>
 						</div>
 						<div class="toggle-inner">
 							<i class="fas fa-bars"></i>
@@ -169,8 +244,8 @@ body {
 			<div class="mobile_accor_togo">
 				<div class="mobile_accor_logo">
 					<a href="index.html">
-				<img src="assets/img/hm-two-logo.png" class="svg" alt="">
-			</a>
+						<img src="assets/img/hm-two-logo.png" class="svg" alt="">
+					</a>
 				</div>
 				<div class="close-menu">
 					<span></span>
@@ -207,6 +282,32 @@ body {
 		<!--=        Content         =-->
 		<!--==========================-->
 
+		<div class="mt-5">
+			<div class="col-lg-12 pt-4">
+				<!-- <div class="banner-img"> -->
+				<div class="owl-carousel owl-theme">
+					<div class="item" id="item-1">
+						<div class="banner-content">
+							<h2>Producing High Quality Pharmaceuticals Products</h2>
+						</div>
+					</div>
+					<div class="item" id="item-2">
+						<div class="banner-content">
+							<h2>Passion for the Innovative and Unique Products </h2>
+
+						</div>
+					</div>
+					<div class="item" id="item-3">
+						<div class="banner-content">
+							<h2>We are trying to create a Healthy Life for all</h2>
+						</div>
+					</div>
+
+
+				</div>
+
+			</div>
+		</div>
 
 		<!--==========================-->
 		<!--=        Banner         =-->
@@ -216,19 +317,19 @@ body {
 				<div class="banner_static_flex">
 					<div class="banner_static_left">
 						<h1>
-							PHARMACEUTICALS 
+							PHARMACEUTICALS
 							<span>PRODUCTS</span>
 						</h1>
 						<div class="banner_static_wonder">
 							<p>
 								<i class="material-icons">
-						done_all
-						</i> FEEL LIGHTER
+									done_all
+								</i> FEEL LIGHTER
 							</p>
 							<p>
 								<i class="material-icons">
-						done_all
-						</i> FEEL STRONGER
+									done_all
+								</i> FEEL STRONGER
 							</p>
 						</div>
 						<div class="banner_static_download">
@@ -236,11 +337,11 @@ body {
 								Get our expert diet chart for free
 							</p>
 							<a href="#" class="btn_download">
-						download
-						<i class="material-icons">
-						get_app
-						</i>
-					</a>
+								download
+								<i class="material-icons">
+									get_app
+								</i>
+							</a>
 						</div>
 					</div>
 					<div class="banner_static_right">
@@ -248,7 +349,7 @@ body {
 							<img src="media/images/home6/banner-guy.png" alt="">
 						</div>
 						<div class="banner_static_img">
-							<img src="media/images/home6/banner-arrow.png" alt="">
+							<!-- <img src="media/images/home6/banner-arrow.png" alt=""> -->
 						</div>
 						<div class="banner_static_img">
 							<img src="media/images/home6/banner-circle.png" alt="">
@@ -264,6 +365,8 @@ body {
 		<!--==========================-->
 		<!--=        Banner         =-->
 		<!--==========================-->
+		
+
 		<section class="home_five_service">
 			<div class="vigo_container_one">
 				<div class="home_five_single_service">
@@ -380,7 +483,7 @@ body {
 		<!--==========================-->
 		<!--=        Offer         =-->
 		<!--==========================-->
-		<section class="home5_offer">
+		<!-- <section class="home5_offer">
 			<div class="vigo_container_two">
 				<div class="home5_offer_detail">
 					<div class="home5_offer_detail_bg">
@@ -419,12 +522,12 @@ body {
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
 
 		<!--==========================-->
 		<!--=        Feature         =-->
 		<!--==========================-->
-		<section class="home5_recent home5_feature">
+		<!-- <section class="home5_recent home5_feature">
 			<div class="vigo_container_one">
 				<div class="section_title_four">
 					<h2>FEATURE</h2>
@@ -498,55 +601,55 @@ body {
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
 
 		<!--==========================-->
 		<!--=        Video         =-->
 		<!--==========================-->
-		<div class="rs-team style4 bg17 pt-95 pb-100 md-pt-65 md-pb-70">
-            <div class="container">
-                <div class="icon-slider">
-                    <div class="icon-slide-track">
-                        <div class="icon-slide">
-                            <img src="./media/images/slider/CREXIN-B logo.png" height="100" width="250" alt="">
-                        </div>
-                        <div class="icon-slide">
-                            <img src="./media/images/slider/Docxia-Logo.png" height="100" width="250" alt="">
-                        </div>
-                        <div class="icon-slide">
-                            <img src="./media/images/slider/EydiaCure-Logo.png" height="100" width="250" alt="">
-                        </div>
-                        <div class="icon-slide">
-                            <img src="./media/images/slider/Eydinem EDTA-Logo.png" height="100" width="250" alt="">
-                        </div>
-                        <div class="icon-slide">
-                            <img src="./media/images/slider/Eydipime 2.5-Logo.png" height="100" width="250" alt="">
-                        </div>
-                        <div class="icon-slide">
-                            <img src="./media/images/slider/fda.jpg" height="100" width="250" alt="">
-                        </div>
-                        <div class="icon-slide">
+		<div class="rs-team style4 bg17 pt-95 pb-100 md-pt-65 md-pb-70" style="margin-top:100px">
+			<div class="container">
+				<div class="icon-slider">
+					<div class="icon-slide-track">
+						<div class="icon-slide">
+							<img src="./media/images/slider/CREXIN-B logo.png" height="100" width="250" alt="">
+						</div>
+						<div class="icon-slide">
+							<img src="./media/images/slider/Docxia-Logo.png" height="100" width="250" alt="">
+						</div>
+						<div class="icon-slide">
+							<img src="./media/images/slider/EydiaCure-Logo.png" height="100" width="250" alt="">
+						</div>
+						<div class="icon-slide">
+							<img src="./media/images/slider/Eydinem EDTA-Logo.png" height="100" width="250" alt="">
+						</div>
+						<div class="icon-slide">
+							<img src="./media/images/slider/Eydipime 2.5-Logo.png" height="100" width="250" alt="">
+						</div>
+						<div class="icon-slide">
+							<img src="./media/images/slider/fda.jpg" height="100" width="250" alt="">
+						</div>
+						<!-- <div class="icon-slide">
                             <img src="./media/images/slider/ISO.png" height="100" width="250" alt="">
-                        </div>
-                        <div class="icon-slide">
-                            <img src="./media/images/slider/Nemotriv Logo.png" height="100" width="250" alt="">
-                        </div>
-                        <div class="icon-slide">
-                            <img src="./media/images/slider/Skovic-Logo.png" height="100" width="250" alt="">
-                        </div>
-                        <div class="icon-slide">
-                            <img src="./media/images/slider/PIXIZA-logo.png" height="100" width="250" alt="">
-                        </div>
-                        <div class="icon-slide">
-                            <img src="./media/images/slider/Panxia-Logo.png" height="100" width="250" alt="">
-                        </div>
-                        <div class="icon-slide">
-                            <img src="./media/images/slider/Oxythion Logo.png" height="100" width="250" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+                        </div> -->
+						<div class="icon-slide">
+							<img src="./media/images/slider/Nemotriv Logo.png" height="100" width="250" alt="">
+						</div>
+						<div class="icon-slide">
+							<img src="./media/images/slider/Skovic-Logo.png" height="100" width="250" alt="">
+						</div>
+						<div class="icon-slide">
+							<img src="./media/images/slider/PIXIZA-logo.png" height="100" width="250" alt="">
+						</div>
+						<div class="icon-slide">
+							<img src="./media/images/slider/Panxia-Logo.png" height="100" width="250" alt="">
+						</div>
+						<div class="icon-slide">
+							<img src="./media/images/slider/Oxythion Logo.png" height="100" width="250" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<section class="call_to_action_green">
 			<div class="vigo_container_two">
 				<div class="call_to_action_area_two">
@@ -558,7 +661,8 @@ body {
 									<p>Try out our EydiaCure & enjoy the healthiest life. Discounts end soon!</p>
 								</div>
 								<div class="call_to_action_right_two">
-									<a href="https://api.whatsapp.com/send?l=en&text=Hi!%20I%27m%20interested%20in%20one%20of%20your%20products%20at%20EydiaCure&phone=911234567800" target="_blank"  class="btn_four">Purchase</a>
+									<a href="https://api.whatsapp.com/send?l=en&text=Hi!%20I%27m%20interested%20in%20one%20of%20your%20products%20at%20EydiaCure&phone=911234567800"
+										target="_blank" class="btn_four">Purchase</a>
 								</div>
 							</div>
 						</div>
@@ -568,10 +672,10 @@ body {
 		</section>
 
 
-			<!--=========================-->
+		<!--=========================-->
 		<!--=        Breadcrumb         =-->
 		<!--=========================-->
-		<section class="features_area_home6 section_padding">
+		<!-- <section class="features_area_home6 section_padding">
 			<div class="vigo_container_two">
 				<div class="grid features_area_home6_all">
 					<div class="grid-item single_feature_home6" data-aos="fade-up">
@@ -584,7 +688,8 @@ body {
 							</div>
 							<div class="single_feature_home6_desc">
 								<h3>Manufacturing Standard & Certification</h3>
-								<p>We get our products manufactured at WHO-GMP, ISO certified state of art plant, integrated with robust and automated manufacturing facilities. (Put logo of WHO GMP, ISO)
+								<p>We get our products manufactured at WHO-GMP, ISO certified state of art plant, integrated with robust and automated manufacturing facilities. 
+									<img src="./assets/img/ISO.jpg" alt="">
 									We follow non-negotiable SOPs of quality control and quality assurance
 									</p>
 							</div>
@@ -631,9 +736,9 @@ body {
 						</div>
 					</div>
 				</div>
-				<!-- /.row -->
+				/.row
 			</div>
-		</section>
+		</section> -->
 
 
 		<!--==========================-->
@@ -642,29 +747,30 @@ body {
 		<footer class="footer_five_area">
 			<div class="vigo_container_one">
 				<div class="footer_five_middle clearfix">
-						<div class="widget5_about">
-							<a href="#" class="logo">
-								<img src="media/images/home6/footer-logo.png" alt="#">
-							</a>
-						</div>
-						<div class="widget5_about">
-							<p style="color:white;text-align:center;">B-127, Okhla Industrial Area, Phase 1, New Delhi 10020</p>
-							<a style="color:white;" href="mailto:info@eydiacure.com">info@eydiacure.com</a>
-						</div>
-						<div class="widget5_social">
-							<a href="#">
-								<i class="fab fa-facebook-f"></i>
-							</a>
-									<a href="#">
-								<i class="fab fa-twitter"></i>
-							</a>
-									<a href="#">
-								<i class="fab fa-medium-m"></i>
-							</a>
-									<a href="#">
-								<i class="fab fa-tumblr"></i>
-							</a>
-						</div>
+					<div class="widget5_about">
+						<a href="#" class="logo">
+							<img src="media/images/home6/footer-logo.png" alt="#">
+						</a>
+					</div>
+					<div class="widget5_about">
+						<p style="color:white;text-align:center;">B-127, Okhla Industrial Area, Phase 1, New Delhi 10020
+						</p>
+						<a style="color:white;" href="mailto:info@eydiacure.com">info@eydiacure.com</a>
+					</div>
+					<div class="widget5_social">
+						<a href="#">
+							<i class="fab fa-facebook-f"></i>
+						</a>
+						<a href="#">
+							<i class="fab fa-twitter"></i>
+						</a>
+						<a href="#">
+							<i class="fab fa-medium-m"></i>
+						</a>
+						<a href="#">
+							<i class="fab fa-tumblr"></i>
+						</a>
+					</div>
 				</div>
 				<div class="footer_five_bottom">
 					<div class="footer_four_bottom_left">
@@ -677,19 +783,19 @@ body {
 						<a href="#">
 							<img src="media/images/home6/american-express.png" alt="">
 						</a>
-								<a href="#">
+						<a href="#">
 							<img src="media/images/home6/discover.png" alt="">
 						</a>
-								<a href="#">
+						<a href="#">
 							<img src="media/images/home6/paypal.png" alt="">
 						</a>
-								<a href="#">
+						<a href="#">
 							<img src="media/images/home6/stripe.png" alt="">
 						</a>
-								<a href="#">
+						<a href="#">
 							<img src="media/images/home6/nettler.png" alt="">
 						</a>
-								<a href="#">
+						<a href="#">
 							<img src="media/images/home6/payoneer.png" alt="">
 						</a>
 					</div>
@@ -702,13 +808,12 @@ body {
 
 
 	</div>
-	<!-- /#site -->
 
 	<!-- Dependency Scripts -->
 	<script src="dependencies/jquery/jquery.min.js"></script>
 	<script src="dependencies/popper.js/popper.min.js"></script>
 	<script src="dependencies/bootstrap/js/bootstrap.min.js"></script>
-	<script src="dependencies/owl.carousel/js/owl.carousel.min.js"></script>
+	<script src="assets/owl.carousel.min.js"></script>
 	<script src="dependencies/magnific-popup/js/jquery.magnific-popup.min.js"></script>
 	<script src="dependencies/isotope-layout/js/isotope.pkgd.min.js"></script>
 	<script src="dependencies/slick-carousel/js/slick.min.js"></script>
@@ -728,7 +833,32 @@ body {
 	<!-- Site Scripts -->
 	<script src="assets/js/middle.js"></script>
 	<script src="assets/js/app.js"></script>
+	<!-- /#site -->
+	<script>
+		$('.owl-carousel').owlCarousel({
+			loop: true,
+			margin: 10,
+			nav: false,
+			dots: false,
+			autoplay: true,
+			autoplayTimeout: 3500,
+			autoplayHoverPause: true,
+			smartSpeed: 2000,
 
+			responsive: {
+				0: {
+					items: 1
+				},
+				600: {
+					items: 1
+				},
+				1000: {
+					items: 1
+				}
+			}
+		})
+
+	</script>
 
 </body>
 
