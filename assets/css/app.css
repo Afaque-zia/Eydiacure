@@ -3752,7 +3752,20 @@ textarea {
   ##  Banner5
   --------------------------------------------------------------*/
 .banner_static {
-  background: #4f97c3;
+  background: #0c6297;
+  background: url("https://media.istockphoto.com/photos/medical-symbol-image-on-high-tech-blue-background-picture-id1141061864?k=20&m=1141061864&s=170667a&w=0&h=ZresHeS1v3L96Y_XCAjNUVZk4zKM6m6vt0CCeY5AdMA=") center no-repeat ;
+  background-size: cover;
+  position: relative;
+}
+.banner_static::before{
+  content: "";
+  background:linear-gradient(245deg, #001d54, #0045e738);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .banner_static_flex {
@@ -3792,12 +3805,13 @@ textarea {
   margin-bottom: 38px;
   padding-top: 14px;
   position: relative;
+  text-shadow: 1px 10px 14px #00adff, 11px 11px 27px white, 1px -10px 20px deepskyblue;
   z-index: 1;
   margin-left: -5px !important;
 }
 
 .banner_static_left h1 span {
-  color: #2a5591;
+  color: #000000;
   display: block;
 }
 
@@ -3808,14 +3822,14 @@ textarea {
 .banner_static_wonder p {
   display: inline-block;
   margin-right: 38px;
-  color: #222;
+  color: #fff;
   font-size: 24px;
   margin-bottom: 0;
   letter-spacing: 3px;
 }
 
 .banner_static_download p {
-  color: #4f4f4f;
+  color: #fff;
   font-size: 14px;
   margin-bottom: 8px !important;
   letter-spacing: 0.25px !important;
@@ -3833,7 +3847,7 @@ textarea {
   letter-spacing: 3px;
   line-height: 69px !important;
   background: #fff;
-  border: 3px solid #222;
+  border: 3px solid #0bf;
   padding: 0 20px;
 }
 
@@ -3855,7 +3869,7 @@ textarea {
 }
 
 .banner_static_download a i {
-  color: #2a5591;
+  color: #0bf;
   font-size: 30px;
   vertical-align: middle;
   padding-left: 20px;
@@ -3872,7 +3886,7 @@ textarea {
   top: -1px;
   width: 3px;
   height: 100%;
-  background: #222;
+  background: #0bf;
 }
 
 .banner_static_img {
@@ -4198,7 +4212,6 @@ textarea {
   }
   .banner_static_wonder {
     margin-bottom: 20px;
-    display: none;
   }
   .banner_static_img:nth-child(2) {
     display: none;
@@ -4231,11 +4244,9 @@ textarea {
   .banner_static_flex {
     height: 480px;
   }
-  .banner_static_wonder {
-    display: none;
-  }
+  
   .banner_static_left h1 {
-    font-size: 40px;
+    font-size: 35px;
   }
 }
 
@@ -6733,7 +6744,7 @@ textarea {
   display: inline-block;
   margin-right: 30px;
   vertical-align: middle;
-  background: #4f97c2;
+  background: linear-gradient(245deg, #001d54, #0045e7cf);
   padding: 20px;
   position: relative;
 }
@@ -6858,7 +6869,7 @@ textarea {
   ## Home Service 5
   --------------------------------------------------------------*/
 .home5_recent {
-  background: #4f97c2;
+  background: linear-gradient(245deg, #001d54, #0045e7cf);
   position: relative;
   overflow: hidden;
   padding-bottom: 38px;
@@ -11987,7 +11998,7 @@ p.form-submit {
 .call_to_action_left_two p {
   margin-bottom: 0;
   font-size: 20px;
-  color: #222;
+  color: #fff;
   opacity: 0.8;
   letter-spacing: 0.2px;
 }
@@ -12036,7 +12047,7 @@ p.form-submit {
   background: #2a5591;
   background: -webkit-gradient(linear, right top, left top, from(#2a5591), to(#4078c569));
   background: -o-linear-gradient(right, #2a5591 0%, #4078c569 100%);
-  background: linear-gradient(to left, #2a5591 0%, #4078c569 100%);
+  background: linear-gradient(245deg, #001d54, #0045e7cf);
   position: relative;
   padding: 50px 0px;
 }
