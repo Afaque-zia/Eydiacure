@@ -31,7 +31,7 @@
 	<link rel="stylesheet" href="assets/css/app.css" type="text/css">
 
 	<link id="theme" rel="stylesheet" href="assets/css/theme-color/theme-default.css" type="text/css">
-
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<!-- Google Web Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900%7CRoboto:300,400,500,700,900" rel="stylesheet">
 
@@ -55,7 +55,7 @@
 						<div class="col-auto mr-auto">
 							<div class="header_logo">
 								<a href="index.html">
-							<img class="logo-default" src="media/images/home6/logo.png" alt="">
+							<img class="logo-default" style="filter:brightness(10.5);" src="media/images/home6/logo.png" alt="">
 							<img class="logo-white" src="media/images/home6/footer-logo.png" alt="">
 						</a>
 							</div>
@@ -168,13 +168,13 @@
 		<section class="about_area">
 			<div class="vigo_container_two">
 				<div class="row">
-					<div class="col-md-6">
+					<div class="col-md-6"  data-aos="flip-left">
 						<div class="about_left_side">
 							<img src="media/images/home6/about-left.jpg" alt="ff">
 						</div>
 					</div>
 					<div class="col-md-6">
-						<div class="about_right_side">
+						<div class="about_right_side" data-aos="flip-right">
 							<h3>About EydiaCure</h3>
 							<p>Good health is vital to all of us, and finding sustainable solutions to the most pressing health care challenges of our world cannot wait. Aiming to improve the quality healthcare service EydiaCure has been established by a group of healthcare professionals.
 							</p>
@@ -192,7 +192,7 @@
 		<section class="about_area_bottom">
 			<div class="vigo_container_two">
 				<div class="row">
-					<div class="col-md-6">
+					<div class="col-md-6" data-aos="flip-left">
 						<div class="about_area_bottom_left">
 							<p>EydiaCure is a subsidiary of UNIVOLTS LLC, DUBAI, and Our partnership with UNIVOLTS LLC, aim to bring innovative products and expertise to fulfil the unmet needs of the medical fraternity in India.</p>
 							<p>Life's all about staying healthy and enjoying the good things in life! However, illness is inevitable at all stages of life. That's why we at EydiaCure are committed to applying our knowledge, science and resources to improve health and well-being at every stage of life. So we, at EydiaCure strive to provide access to safe, effective and affordable medicines to the people who need them. </p>
@@ -200,7 +200,7 @@
 							
 						</div>
 					</div>
-					<div class="col-md-6">
+					<div class="col-md-6"  data-aos="flip-right">
 						<div class="about_bottom_right_side">
 							<img src="media/images/home6/about-bottom.jpg" alt="ff">
 						</div>
@@ -269,7 +269,6 @@
 						</div>
 					</div>
 				</div>
-				/.row
 			</div>
 		</section>
 
@@ -364,10 +363,23 @@
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsBrMPsyNtpwKXPPpG54XwJXnyobfMAIc"></script>
 	<script src="dependencies/rangeslider.js/js/rangeslider.min.js"></script>
 	<script src="dependencies/waypoints/js/jquery.waypoints.min.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<!-- Site Scripts -->
 	<script src="assets/js/middle.js"></script>
 	<script src="assets/js/app.js"></script>
 
-
+	<!-- /#site -->
+	<script>
+		// animation
+		AOS.init({
+			offset: 220, // offset (in px) from the original trigger point
+			delay: 0, // values from 0 to 3000, with step 50ms
+			duration: 400, // values from 0 to 3000, with step 50ms
+			easing: 'ease', // default easing for AOS animations
+			once: false, // whether animation should happen only once - while scrolling down
+			mirror: true, // whether elements should animate out while scrolling past them
+			anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+		});
+	</script>
 </body>
 </html>
