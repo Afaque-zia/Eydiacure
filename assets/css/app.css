@@ -3405,7 +3405,7 @@ textarea {
 
 .hdr_area_four .main_menu > ul > li > a {
   font-size: 14px;
-  color: #222;
+  color: #fff;
   position: relative;
   padding: 0 19px;
   -webkit-transition: 0.3s;
@@ -3436,7 +3436,7 @@ textarea {
 }
 
 .hdr_area_four .header_nav {
-  background: #f5f5f5;
+  background: linear-gradient(245deg, #001d54, #0045e7cf);
 }
 
 .hdr_btn_wrapper {
@@ -3765,7 +3765,7 @@ textarea {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 0;
 }
 
 .banner_static_flex {
@@ -3811,7 +3811,7 @@ textarea {
 }
 
 .banner_static_left h1 span {
-  color: #000000;
+  color: #0045e7;
   display: block;
 }
 
@@ -6777,7 +6777,7 @@ textarea {
 
 .home_five_single_service:before {
   height: 0;
-  background: #2a5591;
+  background: #2a5ed7;
   z-index: 2;
   -webkit-transition: 0.5s ease-in-out;
   -o-transition: 0.5s ease-in-out;
@@ -6846,7 +6846,7 @@ textarea {
 }
 
 .home_five_single_service_right a:hover {
-  color: #31842A;
+  color: #285dd6;
 }
 
 .home_five_single_service:last-child .home_five_single_service_right {
@@ -6970,7 +6970,7 @@ textarea {
 
 .section_title_four h2 {
   font-size: 60px;
-  color: #222;
+  color: #0045e7;
   font-weight: 700;
   display: inline-block;
   background: #fff;
@@ -7150,13 +7150,12 @@ textarea {
   text-align: left;
   margin: 0 auto;
   padding-top: 56px;
-  padding-bottom: 123px;
   padding-left: 151px;
 }
 
 .home5_offer_center h2 {
   font-size: 60px;
-  color: #222;
+  color: #0045e7;
   font-weight: 700;
   font-family: "Poppins", sans-serif;
   margin-bottom: 5px;
@@ -7174,7 +7173,7 @@ textarea {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   content: "";
-  background: #2a5591;
+  background: #1d62c36b;
   -webkit-transform-origin: center;
   -ms-transform-origin: center;
   transform-origin: center;
@@ -7579,7 +7578,7 @@ textarea {
 }
 
 .single_feature_home6_content:hover .single_feature_home6_desc h3:before {
-  background: #2a5591;
+  background: #0045e7;
 }
 
 .single_feature_home6_content .single_feature_home6_icon {
@@ -22124,18 +22123,18 @@ p.form-submit {
     color: #fff;
   }
   .hdr_area_two #mobile-nav-wrap {
-    background: #2a5591;
+    background: linear-gradient(245deg, #001d54, #0045e7cf);
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   }
   .headroom--not-top.hdr_area_two #mobile-nav-wrap {
-    background: #2a5591;
+    background: linear-gradient(245deg, #001d54, #0045e7cf);
   }
   #mobile-nav-wrap .bottom_nav_two #mobile-logo {
     padding: 0;
     line-height: 60px;
   }
   .mobile-menu-inner-two .mobile_accor_togo {
-    background: #2a5591;
+    background: linear-gradient(245deg, #001d54, #0045e7cf);
   }
   .close-menu span::after {
     background: #222;
