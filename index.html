@@ -44,16 +44,15 @@
 
 		.owl-carousel {
 			width: 100%;
-			height: 582px;
-			overflow: hidden;
+			height: 100vh;
+			overflow: visible;
 			display: block;
 		}
 
 		.item {
 			width: 100%;
-			border-radius: 20px;
 			margin-top: 55px;
-			height: 500px;
+			height: 800px;
 		}
 
 		@media (max-width:767px) {
@@ -74,14 +73,14 @@
 		}
 
 		#item-2 {
-			background-image: url(./assets/img/eydiacure-slide2.jpg);
+			background-image: url(./assets/img/eydiacure-slide3.jpg);
 			background-position: center;
 			background-repeat: no-repeat;
 			background-size: cover;
 		}
 
 		#item-3 {
-			background-image: url(./assets/img/eydiacure-slide3.jpg);
+			background-image: url(./assets/img/eydiacure-slide2.jpg);
 			background-position: center;
 			background-repeat: no-repeat;
 			background-size: cover;
@@ -90,11 +89,11 @@
 		.banner-content {
 			margin-top: 0px;
 			padding: 0px 50px;
-			max-width: 873px;
-			/* margin-left: auto; */
+			max-width: 100%;
 			position: relative;
-			top: 50%;
-			transform: translate(10px, -50%);
+			top: 80%;
+			left: 50%;
+			transform: translate(-50%, -50%);
 			z-index: 1;
 			display: flex;
 			justify-content: center;
@@ -103,7 +102,6 @@
 
 		.banner-content h2 {
 			color: #fff;
-			font-size: 55px;
 			text-shadow: 1px 10px 14px #00adff, 11px 11px 27px white, 1px -10px 20px deepskyblue;
 		}
 
@@ -111,7 +109,7 @@
 			.banner-content h2 {
 				color: #fff;
 				text-align: center;
-				font-size: 33px;
+				font-size: 17px;
 			}
 		}
 
@@ -165,6 +163,11 @@
 			animation: scroll 20s linear infinite;
 			display: flex;
 			width: calc(250px * 14);
+		}
+		@media (max-width:767px){
+			.icon-slider .icon-slide-track {
+				width: calc(150px * 14);
+			}
 		}
 
 		.icon-slider .icon-slide {
@@ -283,12 +286,6 @@
 					</li>
 				</ul>
 			</nav>
-			<ul class="footer-social-link">
-				<li class="fb-bg"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-				<li class="in-bg"><a href="#"><i class="fab fa-instagram"></i></a></li>
-				<li class="tw-bg"><a href="#"><i class="fab fa-twitter"></i></a></li>
-				<li class="gp-bg"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-			</ul>
 		</section>
 
 		<!--==========================-->
@@ -345,17 +342,6 @@
 								</i> FEEL STRONGER
 							</p>
 						</div>
-						<div class="banner_static_download" data-aos="zoom-in">
-							<p>
-								Get our expert diet chart for free
-							</p>
-							<a href="#" class="btn_download">
-								download
-								<i class="material-icons">
-									get_app
-								</i>
-							</a>
-						</div>
 					</div>
 					<div class="banner_static_right">
 						<div class="banner_static_img" data-aos="zoom-in">
@@ -375,123 +361,7 @@
 			</div>
 		</section>
 
-		<!--==========================-->
-		<!--=        Banner         =-->
-		<!--==========================-->
 
-
-		<section class="home_five_service">
-			<div class="vigo_container_one">
-				<div class="home_five_single_service" data-aos="zoom-in">
-					<div class="home_five_single_service_inner clearfix">
-						<div class="home_five_single_service_right">
-							<!-- <h3>Pain Relief</h3> -->
-							<h6 style="color: #fff;">Producing High Quality Pharmaceuticals Products</h6>
-							<a href="#">Details</a>
-						</div>
-						<div class="home_five_single_service_img">
-							<img src="media/images/home6/service-one.png" alt="">
-						</div>
-					</div>
-				</div>
-				<div class="home_five_single_service" data-aos="zoom-in">
-					<div class="home_five_single_service_inner clearfix">
-						<img src="media/images/home6/service-two.png" alt="!!">
-					</div>
-				</div>
-				<div class="home_five_single_service" data-aos="zoom-in">
-					<div class="home_five_single_service_inner clearfix">
-						<div class="home_five_single_service_img">
-							<img src="media/images/home6/service-three.png" alt="">
-						</div>
-						<div class="home_five_single_service_right">
-							<!-- <h3>Amazing Offer</h3> -->
-							<h6 style="color: #fff;">We are trying to create a Healthy Life for all</h6>
-							<a href="#">Details</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!--==========================-->
-		<!--=        Banner         =-->
-		<!--==========================-->
-		<section class="home5_recent">
-			<div class="vigo_container_one">
-				<div class="section_title_four" data-aos="zoom-in">
-					<h2>Products</h2>
-				</div>
-				<div class="home5_recent_slider owl-carousel">
-					<div class="home5_recent_slide" data-aos="zoom-in">
-						<div class="home5_recent_thumb">
-							<img src="media/images/home6/recent-one.png" alt="gg">
-							<span>
-								<img src="./media/images/home6/verified.png" alt="">
-							</span>
-						</div>
-						<div class="home5_recent_title">
-							<h3><a href="product-detail.html">Ceftazidime & Sulbactam for Injection</a></h3>
-						</div>
-					</div>
-					<div class="home5_recent_slide">
-						<div class="home5_recent_thumb">
-							<img src="media/images/home6/recent-two.png" alt="gg">
-							<span>
-								<img src="./media/images/home6/verified.png" alt="">
-							</span>
-						</div>
-						<div class="home5_recent_title">
-							<h3><a href="product-detail.html">Doxycycline for Injection USP (Docxia)</a></h3>
-						</div>
-					</div>
-					<div class="home5_recent_slide">
-						<div class="home5_recent_thumb">
-							<img src="media/images/home6/recent-three.png" alt="gg">
-							<span>
-								<img src="./media/images/home6/verified.png" alt="">
-							</span>
-						</div>
-						<div class="home5_recent_title">
-							<h3><a href="product-detail.html">Cefepime & Tazobactam for Injection</a></h3>
-						</div>
-					</div>
-					<div class="home5_recent_slide">
-						<div class="home5_recent_thumb">
-							<img src="media/images/home6/recent-four.png" alt="gg">
-							<span>
-								<img src="./media/images/home6/verified.png" alt="">
-							</span>
-						</div>
-						<div class="home5_recent_title">
-							<h3><a href="product-detail.html">Sterile Co-Trimoxazole for Infusion</a></h3>
-						</div>
-					</div>
-					<div class="home5_recent_slide">
-						<div class="home5_recent_thumb">
-							<img src="media/images/home6/recent-three.png" alt="gg">
-							<span>
-								<img src="./media/images/home6/verified.png" alt="">
-							</span>
-						</div>
-						<div class="home5_recent_title">
-							<h3><a href="product-detail.html">Cefepime & Tazobactam for Injection</a></h3>
-						</div>
-					</div>
-					<div class="home5_recent_slide">
-						<div class="home5_recent_thumb">
-							<img src="media/images/home6/recent-four.png" alt="gg">
-							<span>
-								<img src="./media/images/home6/verified.png" alt="">
-							</span>
-						</div>
-						<div class="home5_recent_title">
-							<h3><a href="product-detail.html">Sterile Co-Trimoxazole for Infusion</a></h3>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
 
 		<!--==========================-->
 		<!--=        Offer         =-->
@@ -519,14 +389,12 @@
 								applying our knowledge, science and resources to improve health and well-being at every
 								stage of life. So we, at EydiaCure strive to provide access to safe, effective and
 								affordable medicines to the people who need them.
+								<h4>Manufacturing Standard & Certification</h4>
+								We get our products manufactured at WHO-GMP, ISO certified state of art plant, integrated with robust and automated manufacturing facilities. (Put logo of WHO GMP, ISO)
+								We follow non-negotiable SOPs of quality control and quality assurance
 							</p>
+							<img src="./assets/img/ISO.jpg" alt="">
 							<!-- <a href="https://api.whatsapp.com/send?l=en&text=Hi!%20I%27m%20interested%20in%20one%20of%20your%20products%20at%20EydiaCure&phone=911234567800" target="_blank" class="btn_three" >Grab now!</a> -->
-						</div>
-						<div class="home5_offer_right">
-							<span>
-								<img src="./media/images/home6/verified.png" alt="">
-							</span>
-							<img src="media/images/home6/offer-right.png" alt="">
 						</div>
 					</div>
 				</div>
@@ -615,7 +483,7 @@
 		<!--==========================-->
 		<!--=        Video         =-->
 		<!--==========================-->
-		<div class="rs-team style4 bg17 pt-95 pb-100 md-pt-65 md-pb-70" style="margin-top:100px">
+		<div class="rs-team style4 bg17 pt-95 pb-100 md-pt-65 md-pb-70">
 			<div class="container">
 				<div class="icon-slider">
 					<div class="icon-slide-track">
@@ -625,9 +493,9 @@
 						<div class="icon-slide">
 							<img src="./media/images/slider/Docxia-Logo.png" height="100" width="250" alt="">
 						</div>
-						<div class="icon-slide">
+						<!-- <div class="icon-slide">
 							<img src="./media/images/slider/EydiaCure-Logo.png" height="100" width="250" alt="">
-						</div>
+						</div> -->
 						<div class="icon-slide">
 							<img src="./media/images/slider/Eydinem EDTA-Logo.png" height="100" width="250" alt="">
 						</div>
@@ -666,12 +534,8 @@
 						<div class="col-xl-10 offset-xl-2">
 							<div class="call_to_action_hello">
 								<div class="call_to_action_left_two">
-									<h2>LIVE HEALTHY?</h2>
-									<p>Try out our EydiaCure & enjoy the healthiest life. Discounts end soon!</p>
-								</div>
-								<div class="call_to_action_right_two">
-									<a href="https://api.whatsapp.com/send?l=en&text=Hi!%20I%27m%20interested%20in%20one%20of%20your%20products%20at%20EydiaCure&phone=911234567800"
-										target="_blank" class="btn_four">Purchase</a>
+									<h2>LIVE HEALTHY</h2>
+									<p>Try out EydiaCure & enjoy the healthiest life.</p>
 								</div>
 							</div>
 						</div>
@@ -684,31 +548,6 @@
 		<!--=========================-->
 		<!--=        Breadcrumb         =-->
 		<!--=========================-->
-		<section class="features_area_home6">
-			<div class="vigo_container_two">
-				<div class="grid features_area_home6_all">
-					<div class="grid-item single_feature_home6" style="width: 100% !important;" data-aos="zoom-out-up">
-						<div class="single_feature_home6_content">
-							<div class="single_feature_home6_icon">
-								<i class="fab fa-envira"></i>
-							</div>
-							<div class="single_feature_home6_desc">
-								<h3>Manufacturing Standard & Certification</h3>
-								<p>We get our products manufactured at WHO-GMP, ISO certified state of art plant,
-									integrated with robust and automated manufacturing facilities.
-									<img src="./assets/img/ISO.jpg" alt="">
-									We follow non-negotiable SOPs of quality control and quality assurance
-								</p>
-							</div>
-							<div class="single_feature_home6_bottom_icon">
-								<i class="fab fa-envira"></i>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- /.row -->
-			</div>
-		</section>
 		<section>
 			<div class="container">
 				<div class="row py-5 align-items-center justify-content-center ">
@@ -751,50 +590,22 @@
 						</a>
 					</div>
 					<div class="widget5_about">
-						<p style="color:white;text-align:center;">B-127, Okhla Industrial Area, Phase 1, New Delhi 10020
-						</p>
-						<a style="color:white;" href="mailto:info@eydiacure.com">info@eydiacure.com</a>
+						<h6 style="color:white;text-align:center;">Registered Office Address</h6>
+						<p style="color:white;text-align:center;">B-127, Okhla Industrial Area, Phase 1, New Delhi 10020</p>
+						<a style="color:white;" href="mailto:info@eydiacure.com" target="_blank">info@eydiacure.com</a>
 					</div>
-					<div class="widget5_social">
-						<a href="#">
-							<i class="fab fa-facebook-f"></i>
-						</a>
-						<a href="#">
-							<i class="fab fa-twitter"></i>
-						</a>
-						<a href="#">
-							<i class="fab fa-medium-m"></i>
-						</a>
-						<a href="#">
-							<i class="fab fa-tumblr"></i>
-						</a>
+					<div class="">
+						<h6 style="color:white;text-align:center;">UAE Office Address</h6>
+						<p style="color:white;text-align:center;"> Univolts general trading FZCO.
+							DDP Building A2, Dubai Silicon Oasis, Dubai - U.A.E, P,O. Box: 22706</p>
+							<a href="mailto:info@univolts.co" target="_blank" style="color:white;text-align:center;">info@univolts.co</a>
 					</div>
 				</div>
 				<div class="footer_five_bottom">
 					<div class="footer_four_bottom_left">
-						<p>Copyright© <a href="#">Eydiacure</a> | All Rights Reserved</p>
-					</div>
-					<div class="footer_four_bottom_right">
-						<a href="#">
-							<img src="media/images/home6/visa.png" alt="">
-						</a>
-						<a href="#">
-							<img src="media/images/home6/american-express.png" alt="">
-						</a>
-						<a href="#">
-							<img src="media/images/home6/discover.png" alt="">
-						</a>
-						<a href="#">
-							<img src="media/images/home6/paypal.png" alt="">
-						</a>
-						<a href="#">
-							<img src="media/images/home6/stripe.png" alt="">
-						</a>
-						<a href="#">
-							<img src="media/images/home6/nettler.png" alt="">
-						</a>
-						<a href="#">
-							<img src="media/images/home6/payoneer.png" alt="">
+						<p style="display: inline-block;">Copyright© <a href="#">Eydiacure</a> | All Rights Reserved</p>
+						<a href="https://www.facebook.com/eydiacurepvt.ltd" target="_blank">
+							<i class="fab fa-facebook-f"></i>
 						</a>
 					</div>
 					<div class="backtotop">
