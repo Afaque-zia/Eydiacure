@@ -7119,7 +7119,7 @@ textarea {
 .home5_offer_left {
   position: absolute;
   bottom: -81px;
-  left: -175px;
+  left: -406px;
 }
 
 .home5_offer_right {
@@ -7146,7 +7146,6 @@ textarea {
 }
 
 .home5_offer_center {
-  width: 57%;
   text-align: left;
   margin: 0 auto;
   padding-top: 56px;
@@ -15021,7 +15020,7 @@ p {
 }
 
 .footer_five_area .footer_four_bottom_right {
-  margin-right: 30px;
+  margin: 30px auto;
 }
 
 .footer_five_area .footer_four_bottom_right a {
@@ -22111,6 +22110,10 @@ p.form-submit {
   }
   #mobile-nav-wrap {
     display: block;
+    width: 100vw;
+  }
+  #header{
+    width:100vw;
   }
   .top_toolbar,
   .header_nav {
